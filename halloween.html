@@ -1,1 +1,73 @@
-halloween.html
+<!DOCTYPE html>
+<html>
+<head>
+
+	<style type="text/css">
+
+		body{
+			background-color: black
+		}
+
+
+		#door{
+			background-color: black;
+			width:1000px;
+			height:650px;
+			background-image:url(https://images.snapwi.re/f676/554dac427e83a19461f255d9.w800.jpg);
+			background-size:
+			contain;
+			background-repeat:
+			no-repeat;
+
+ 
+		}
+	
+
+	</style>
+</head>
+<body>
+	<audio id="sound1" src="firstSoundB.m4a"></audio>
+
+	<audio id="sound2" src="scream1.mp3"></audio>
+
+
+	<div id="door"></div>
+
+	<script type="text/javascript">
+
+
+
+		function playSound1 (){
+			sound1.play();
+		}
+
+			function playSound2 (){
+			sound2.play();
+		}
+
+
+		function changeImage (){
+			door.style.backgroundImage = "url(clown.avif)";
+		}
+
+		document.addEventListener("click", function(){
+
+			setTimeout(playSound1, 1000)
+			setTimeout(playSound2, 5000)
+
+
+			setTimeout(changeImage, 5000)
+
+	})
+
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>
