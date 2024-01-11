@@ -1,34 +1,57 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap" rel="stylesheet">
 	<style type="text/css">
 
+		.text{
+			font-family:'Holtwood One SC', serif;
+			position:relative;
+			top:100%;
+			text-align:center;
+			color:lightblue;
+			background-color:white;
+		}
 
+		#arrow{
+			background-image:url(./images/arrow.png);
+		
+		}
 		
 		#squares{
 			
-			background-image:url(squares.png);
+			background-image:url(./images/bubble2.png);
 			
 		}
 
 		#halloween{
 			
-			background-image:url(pumpkin.png);
+			background-image:url(./images/bubble2.png);
 			
 		}
 
 		#card{
 			
-			background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjQhA0BBd2thwmOQyVfk5DB3AoVOQPo5xVOEtT3EV8xOlV5mrgIUzaV518Nksi_Q5YWSo&usqp=CAU);
+			background-image:url(./images/bubble2.png);
 			
 		}
 
 
 		#pie{
 			
-			background-image:url(pie.jpg);
+			background-image:url(./images/bubble2.png);
 			
 		}
+
+		#cake{
+			
+			background-image:url(./images/bubble2.png);
+			
+		}
+
+		
 
 
 
@@ -42,7 +65,7 @@
 			background-repeat:
 			no-repeat;
 			display:inline-block;
-			margin:4px;
+			margin:15px;
 	}
 
 
@@ -53,27 +76,52 @@
 	
 </head>
 <body>
-	<a href="squares.html"> 
-		<div class="button" id="squares">
+
+	<!-- <center> -->
+
+		<a href="index.html">
+		<div id="arrow" class="button"> 
+		<div class="text"> back to index</div>
 			
-		</div>
-		
+	</div>
+	</a>
+		<a href="squares.html">
+		<div id="squares" class="button"> 
+		<div class="text"> squares </div>
+			
+	</div>
 	</a>
 
 	<a href="halloween.html">
-		<div class="button" id="halloween">
-		</div>
+		<div id="halloween" class="button"> 
+		<div class="text"> halloween scare</div>
+			
+	</div>
 	</a>
 
 	<a href="card.html">
-		<div class="button" id="card">
-		</div>
+		<div id="card" class="button"> 
+		<div class="text"> polaroid project</div>
+			
+	</div>
 	</a>
 
 	<a href="apple.html">
-		<div class="button" id="pie">
-		</div>
+		<div id="pie" class="button"> 
+		<div class="text"> pie eating</div>
+			
+	</div>
 	</a>
+
+	<a href="cake.html">
+		<div id="cake" class="button"> 
+		<div class="text"> cake making</div>
+			
+	</div>
+	</a>
+
+	
+<!-- </center> -->
 
 </body>
 </html>

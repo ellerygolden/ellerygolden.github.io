@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		.topping{
+			width:100px;
+			height:100px;
+			display:inline-block;
+			background-size:contain;
+			background-repeat: no-repeat;
+		}
+
+		#cake{
+			width:500px;
+			height:500px;
+			background-image:url(./images/cake.png);
+			background-size:cover;
+		}
+
+
+		#sprinkle{
+			background-image:url(./images/sprinkle1.png);
+
+		}
+
+		#fruit{
+			background-image:url(./images/images.png);
+
+		}
+
+		#flower{
+			background-image:url(./images/Untitled.png);
+
+		}
+
+		#frosting{
+			background-image:url(./images/frosting.png);
+
+		}
+
+
+	</style>
+</head>
+<body>
+	<center>
+		<h1>decorate a cake 🎂</h1>
+		<h2>(refresh to reset cake)</h2>
+
+	<div id="sprinkle" class="topping"></div>
+	<div id="fruit" class="topping"></div>
+	<div id="flower" class="topping"></div>
+	<div id="frosting" class="topping"></div>
+
+	<div id="cake"></div>
+
+<script type="text/javascript">
+	var topping;
+
+//these three event listeners are for the toppings at the top to set the background image//
+	
+		sprinkle.addEventListener("click", function(){
+		topping = "./images/sprinkle1.png"
+				console.log(topping)
+	})
+
+		fruit.addEventListener("click", function(){
+		topping = "./images/images.png"
+				console.log(topping)
+	})
+		flower.addEventListener("click", function(){
+		topping = "./images/Untitled.png"
+			console.log(topping)
+    })
+
+		frosting.addEventListener("click", function(){
+		topping = "./images/frosting.png"
+			console.log(topping)
+    })
+
+			//this is the event listener for the big div and it makes divs inside that div every time we click//
+
+	document.addEventListener("click", 
+		function makeDiv (event){
+		var cakedec = document.createElement('div');
+		document.body.appendChild(cakedec)
+		cakedec.classList.add('topping')
+		cakedec.style.position = "absolute"
+		cakedec.style.left = event.clientX-50 +"px"
+		cakedec.style.top = event.clientY-50 +"px"
+		cakedec.style.border = "0px"
+		cakedec.style.backgroundImage = "url("+ topping	+")"
+	})
+
+</script>
+
+</body>
+</html>

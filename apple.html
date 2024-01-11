@@ -1,10 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap" rel="stylesheet">
+	<style type="text/css">
+		p{
+			font-family:'Holtwood One SC', serif;
+			position:relative;
+			top:100%;
+			text-align:center;
+			color:black;
+			background-color:white;
+		}
+
+	</style>
 	
 </head>
 <body>
+	<center>
+	<p> click the pie to eat it </p>
+</center>
 	<script type="text/javascript">
+
 		
 		function makePie(){
 
@@ -16,11 +34,14 @@
 			applepie.style.backgroundImage="url(https://imagedelivery.net/9lr8zq_Jvl7h6OFWqEi9IA/e874fa6d-8097-4edf-bd5e-4e6657fca300/public)";
 			applepie.style.display="inline-block";
 
+	applepie.addEventListener("click", function(){
+		applepie.style.backgroundImage="url(blank.png)";
+	
+
+		})
 
 		}
 		setInterval(makePie,100)
-
-	</script>
-
+</script>
 </body>
 </html>

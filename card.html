@@ -3,13 +3,34 @@
 
 
 <head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap" rel="stylesheet">
 
 	<style type="text/css">
+
+		p{
+			color:black;
+			font-family: 'Holtwood One SC', serif;
+			font-size:40px; 
+		}
+
+		.text{
+			font-family:'Holtwood One SC', serif;
+			position:relative;
+			top:103%;
+			text-align:center;
+			color:lightblue;
+			background-color:white;
+		}
+
 
 		body{
 			background-color:lightpink;
 		}
 		.polaroid{
+		background-repeat: no-repeat;
+		background-position: center;
 		margin:5px;
 		display:inline-block;
 		width:250px;
@@ -17,57 +38,138 @@
 		border:10px solid white;
 		border-bottom:40px solid white;
 		top:10%;
+		background-size:cover;
+
 	}
 
 	#photo1{
-		background-image:url(brooke1.JPG);
+		background-image:url(./images/brooke.png);
 		width:250px;
 		height:280px;
-		background-size: contain;
 
 	}
 
-	#photo2{background-image:url(brooke6.JPG);
+	#photo2{background-image:url(./images/jemma.jpg);
 		width:250px;
 		height:280px;
-		background-size: contain;
 
 	}
 
-	#photo3{background-image:url(brooke3.JPG);
+	#photo3{background-image:url(./images/amanda.JPG);
 		width:250px;
 		height:280px;
-		background-size: contain;
 
 	}
 
-	#photo4{background-image:url(brooke4.JPG);
+	#photo4{background-image:url(./images/brooke4.JPG);
 		width:250px;
 		height:280px;
-		background-size: contain;
 
 	}
 
-	#photo5{background-image:url(brooke5.JPG);
+	#photo5{background-image:url(./images/gussie.JPG);
 		width:250px;
 		height:280px;
-		background-size: contain;
+
+	}
+
+	#photo6{background-image:url(./images/camp.JPG);
+		width:250px;
+		height:280px;
+
+	}
+
+	#photo7{background-image:url(./images/camp.png);
+		width:250px;
+		height:280px;
+
+	}
+
+	#photo8{background-image:url(./images/vivi.JPG);
+		width:250px;
+		height:280px;
+
+	}
+
+	#photo9{background-image:url(./images/liv.jpg);
+		width:250px;
+		height:280px;
+
+	}
+
+	#photo10{background-image:url(./images/huddie.jpg);
+		width:250px;
+		height:280px;
 
 	}
 
 	</style>
 </head>
 <body>
+	<center>
+	<p> ❤ so so grateful ❤ </p>
+</center>
 
-	<div id="photo1" class="polaroid"></div>
+	<div id="photo1" class="polaroid">
+		<div class="text"> 10/28/23 </div>
+	</div>
 	
-	<div id= "photo2" class="polaroid"></div>
 
-	<div id= "photo3" class="polaroid"></div>
+	<div id= "photo2" class="polaroid">
+		<div class="text"> 08/07/23 </div>
+	</div>
+	
+	
+	<div id= "photo3" class="polaroid">
+			<div class="text"> 09/02/23 </div>
 
-	<div id= "photo4" class="polaroid"></div>
+	</div>
+	
+	<div id= "photo4" class="polaroid">
+			<div class="text"> 11/02/23 </div>
 
-	<div id= "photo5" class="polaroid"></div>
+	</div>
+	
+	<div id= "photo5" class="polaroid">
+			<div class="text"> 07/05/23 </div>
+
+	</div>
+
+	<div id= "photo6" class="polaroid">
+			<div class="text"> 07/20/23 </div>
+
+	</div>
+
+	<div id= "photo7" class="polaroid">
+			<div class="text"> 07/24/23 </div>
+
+	</div>
+
+	<div id= "photo8" class="polaroid">
+		<div class="text"> 10/28/23 </div>
+	</div>
+	
+	
+	<div id= "photo9" class="polaroid">
+		<div class="text"> 11/06/23 </div>
+	</div>
+	
+
+	<div id= "photo10" class="polaroid">
+		<div class="text"> 10/08/23 </div>
+	</div>
+
+	
+
+	<script type="text/javascript">
+		function changeImage (){
+			photo1.style.backgroundImage = "url(./images/ducky.png)";
+
+		document.addEventListener("click", function(){
+
+
+		})
+	
 
 
 </body>

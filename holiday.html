@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		.picture{
+			width:100px;
+			height:100px;
+			display:inline-block;
+			background-size:contain;
+			background-repeat: no-repeat;
+		}
+
+		#board{
+			width:500px;
+			height:500px;
+			background-image:url(./images/board.jpg);
+			background-size:cover;
+		}
+
+
+		#dad1{
+			background-image:url(./images/dad.jpeg);
+
+		}
+
+		#dad2{
+			background-image:url(./images/dad1.jpeg);
+
+		}
+
+		#dad3{
+			background-image:url(./images/dad2.jpeg);
+
+		}
+
+		#dad4{
+			background-image:url(./images/dad3.jpeg);
+
+		}
+
+
+		#dad5{
+			background-image:url(./images/dad4.jpg);
+
+		}
+
+
+		#dad6{
+			background-image:url(./images/dad5.jpeg);
+
+		}
+
+
+	</style>
+</head>
+<body>
+	<center>
+		<h1>💙💙💙</h1>
+	<div id="dad1" class="picture"></div>
+	<div id="dad2" class="picture"></div>
+	<div id="dad3" class="picture"></div>
+	<div id="dad4" class="picture"></div>
+	<div id="dad5" class="picture"></div>
+	<div id="dad6" class="picture"></div>
+
+	<div id="board"></div>
+
+<script type="text/javascript">
+	var dad;
+
+//these three event listeners are for the toppings at the top to set the background image//
+	
+		dad1.addEventListener("click", function(){
+		dad = "./images/dad.jpeg"
+				console.log(dad)
+	})
+
+		dad2.addEventListener("click", function(){
+		dad = "./images/dad1.jpeg"
+				console.log(dad)
+	})
+		dad3.addEventListener("click", function(){
+		dad = "./images/dad2.jpeg"
+			console.log(dad)
+    })
+
+		dad4.addEventListener("click", function(){
+		dad = "./images/dad3.jpeg"
+			console.log(dad)
+    })
+
+		dad5.addEventListener("click", function(){
+		dad = "./images/dad4.jpeg"
+			console.log(dad)
+    })
+
+		dad6.addEventListener("click", function(){
+		dad = "./images/dad5.jpg"
+			console.log(dad)
+    })
+	
+
+			//this is the event listener for the big div and it makes divs inside that div every time we click//
+
+	document.addEventListener("click", 
+		function makeDiv (event){
+		var cakedec = document.createElement('div');
+		document.body.appendChild(cakedec)
+		cakedec.classList.add('dad')
+		cakedec.style.position = "absolute"
+		cakedec.style.left = event.clientX-50 +"px"
+		cakedec.style.top = event.clientY-50 +"px"
+		cakedec.style.border = "0px"
+		cakedec.style.backgroundImage = "url("+ dad	+")"
+	})
+
+</script>
+
+</body>
+</html>
