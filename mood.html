@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap" rel="stylesheet">
+	<style type="text/css">
+	p{
+	font-size: 40px;
+	font-family: 'Holtwood One SC', serif;
+	color: pink;
+}
+
+#box{
+			width: 500px;
+			height: 500px;
+			top:30px;
+			background-repeat: no-repeat;
+			background-size:contain;
+			background-image: url(box.jpg);
+			position:relative;
+		}
+
+	#emotion{
+			width: 500px;
+			height: 500px;
+			font-size: 20px;
+			font-family: 'Holtwood One SC', serif;
+			color: lightpink;
+			left: -15px;
+			top:95px;
+			position: relative;
+		}
+
+
+</style>
+
+</head>
+<body>
+
+	<center>
+		<p> Mood Guesser</p>
+		<div id="box">
+
+			<div id="emotion"></div>
+		
+		</div>
+	</center>
+
+<script type="text/javascript">
+	var myAnswers = ["happy", "sad", "tired", "hungry", "focused", "annoyed", "angry", "scared", "calm", "stressed", "energetic", "surpised"]
+
+	box.addEventListener("click", function(){
+			var randomNumber = Math.round(Math.random()*11);
+			emotion.style.backgroundImage = "url(" + myAnswers[randomNumber] + ")"
+			emotion.innerText = myAnswers[randomNumber];
+			console.log(randomNumber)
+		})
+</script>
+
+</body>
+</html>

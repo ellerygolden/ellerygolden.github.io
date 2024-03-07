@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<style type="text/css">
+
+		p{
+			color:black;
+			font-family: 'Holtwood One SC', serif;
+			font-size:30px; 
+		}
+		#car{
+			width: 150px;
+			height: 100px;
+			background-image:url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Red_Car_Closed_Window_Cartoon_Vector.svg/2560px-Red_Car_Closed_Window_Cartoon_Vector.svg.png);
+			background-size:contain;
+			position:relative;
+			right:0px;
+			top:560px;
+		}
+		#maze1{
+			width: 400px;
+			height: 400px;
+				background-image:url(https://www.researchgate.net/publication/315969093/figure/fig6/AS:482038454198277@1491938331146/Sample-maze-used-in-computer-simulations.png);
+				background-size:contain;
+				background-repeat: no-repeat;
+				top:40px;
+				
+			}
+
+	</style>
+</head>
+<body>
+	<div id='car'></div>
+	<div id='maze1'></div>
+
+	<script type="text/javascript">
+
+		var x=0
+		var y=560
+		document.addEventListener("keydown", function(event){
+			if(event.key=="ArrowRight"){
+				x=x+10
+				car.style.left =x+'px';
+			}
+			if(event.key=="ArrowUp"){
+				y=y-10
+				car.style.top =y+'px';
+			}
+			if(event.key=="ArrowLeft"){
+				x=x-10
+				car.style.left =x+'px';
+			}
+			if(event.key=="ArrowDown"){
+				y=y+10
+				car.style.top =y+'px';
+			}
+
+
+			
+		})
+	</script>
+
+</body>
+</html>

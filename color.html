@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap" rel="stylesheet">
+
+	<style type="text/css">
+		
+		body{
+			font-size:50px;
+			color:white;
+			font-family: 'Holtwood One SC', serif;
+		}
+	</style>
+	
+
+<body>
+
+	<script type="text/javascript">
+		document.addEventListener("click", function(){
+			var x = Math.floor(Math.random()*255);
+			var y = Math.floor(Math.random()*255);
+			var z = Math.floor(Math.random()*255);
+			document.body.style.backgroundColor="rgb("+ x +"," + y +","+ z +")"
+			document.body.innerText = "rgb("+ x +"," + y +","+ z +")"
+		})
+	</script>
+
+</body>
+</html>
