@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap" rel="stylesheet">
+
+	<style type="text/css">
+
+		p{
+	font-size: 40px;
+	font-family: 'Holtwood One SC', serif;
+	color: navy;
+}
+
+button{
+	background-position:center;
+	top:300px;
+position:relative;
+}
+
+		#text{
+			width:200px;
+			height:200px;
+			opacity:0;
+			display:inline-block;
+		}
+
+		#image{
+			width:250px;
+			height:250px;
+			opacity:0;
+			background-size:contain;
+			background-repeat: no-repeat;
+			display:inline-block;
+		}
+
+
+		
+		#time{
+			width:100%;
+			height:5px;
+			background-color:white;
+			position: absolute;
+			top:65%;
+			display:inline-block;
+		}
+
+		#blue{ 
+			width:50px;
+			height:50px;
+			left:450px;
+			top: 5px;
+			background-repeat: no-repeat;
+			background-size:contain;
+			background-image: url(ribbon.png);
+			position:relative;
+		 }
+
+		 #head{ 
+			width:50px;
+			height:50px;
+			left:30px;
+				top: 5px;
+			background-repeat: no-repeat;
+			background-size:contain;
+			background-image: url(head.png);
+			position:relative;
+		 }
+
+		  #luck{ 
+			width:50px;
+			height:50px;
+			left:750px;
+				top: 5px;
+			background-repeat: no-repeat;
+			background-size:contain;
+			background-image: url(horseshoe.png);
+			position:relative;
+		 }
+
+		  #helmet{ 
+			width:50px;
+			height:50px;
+			left:100px;
+				top: 5px;
+			background-repeat: no-repeat;
+			background-size:contain;
+			background-image: url(helmet.png);
+			position:relative;
+		 }
+
+		  #saddle{ 
+			width:50px;
+			height:50px;
+			left:450px;
+				top: 5px;
+			background-repeat: no-repeat;
+			background-size:contain;
+			background-image: url(saddle.png);
+			position:relative;
+		 }
+
+		 #heart{ 
+			width:50px;
+			height:50px;
+			left:750px;
+			top: 5px;
+			background-repeat: no-repeat;
+			background-size:contain;
+			background-image: url(love.png);
+			position:relative;
+		 }
+
+
+body{ 
+	background-color:lightblue;
+}
+	</style>
+</head>
+<body>
+
+	<center>
+		<p> Horseback Riding Timeline</p>
+	</center>
+ <center>
+	<div id="text"></div>
+	<div id="image"></div>
+	</center>
+
+	<div id="movie"></div>
+		<a href="https://drive.google.com/file/d/1otswY3DLYU-4N0QCudWaGq7Siw-c2Shw/view?usp=sharing"> click </a>
+
+	<button id="time"></button>
+	<button id="blue"></button>
+	<button id="head"></button>
+	<button id="luck"></button>
+	<button id="helmet"></button>
+	<button id="saddle"></button>
+	<button id="heart"></button>
+
+
+	<script type="text/javascript">
+var url = "asdljf"
+var backgrounds = ["url(scottie.jpeg)", "url(mikey.jpeg)",  "url(louie.jpeg)", "url(scooter.jpeg)", "url(news.jpeg)", "url(frosty.png)" ]
+
+	head.addEventListener("click", function(){
+			// number = number +1 
+			url = backgrounds[0]
+
+			text.style.opacity="1"
+			text.innerText = "When I started horseback riding at two and a half, it was mostly just pony rides, nothing serious. But, when I turned four I got a pony for the first time. His name was Scottie. Scottie was a very good boy, and helped me win a lot in competitions. This is when I learned that I really liked to horseback ride."
+			image.style.opacity = "1"
+			image.style.backgroundImage = url
+		})
+
+	blue.addEventListener("click", function(){
+			// number = number +2
+			url = backgrounds[2]
+
+			text.style.opacity="1"
+			text.innerText = "When I was 9, my pony's name was Louie. We jumped 2 foot verticals, which isn't that big but bigger than anything I had done before. Louie and I went to all of the shows together. The show I did this best on him was called HITS. I got champion on him in class of 24 people. He was a really good pony but one time I fell off of him and broke my collarbone."
+			image.style.opacity = "1"
+			image.style.backgroundImage = url
+		})
+
+	luck.addEventListener("click", function(){
+			// number = number +4
+			url = backgrounds[4]
+
+			text.style.opacity="1"
+			text.innerText = "News was the first horse I ever had. He is the best boy and was so safe. He is the first horse I was able to bring down to the show in Florida called WEF. Unfortunately, while in Florida, News tore a ligament in his back leg, because another horse crashed into him. The vet says that he should be better by August, so hopefully that is true. "
+			image.style.opacity = "1"
+			image.style.backgroundImage = url
+		})
+
+	helmet.addEventListener("click", function(){
+			// number = number +5
+			url = backgrounds[1]
+
+			text.style.opacity="1"
+			text.innerText = "Once I got a little older and started to take horseback riding more seriously, I leased my first pony. His name was Mikey. With Mikey, I rode in the Hampton Classic, which is a very big horseshow in the Hamptons that people around the world come to. Out of a class of 50 people, ranging from the age of 6 to 10 (I was 7), I got 10th place. This was a very big moment for me. "
+			image.style.opacity = "1"
+			image.style.backgroundImage = url
+		})
+
+	saddle.addEventListener("click", function(){
+			// number = number +6
+			url = backgrounds[3]
+
+			text.style.opacity="1"
+			text.innerText = "After Louie, the next pony I got was named Scooter. He was a little bit naughty and was very playful. But together, we were a very sucessful pair. He was definitely the hardest pony I rode but he was a very good learning experience. I won a lot on him, but sometimes he didn't listen. Scooter really had a mind of his own. "
+			image.style.opacity = "1"
+			image.style.backgroundImage = url
+		})
+
+	heart.addEventListener("click", function(){
+			// number = number +7
+			url = backgrounds[5]
+
+			text.style.opacity="1"
+			text.innerText = "This is my horse now, Frosty. He is my replacement for News while he is hurt. At first he wasn't my favorite, but now I love him so much. We have only been at 2 shows together, but we have won both times. He is the sweetest horse ever, he just wants treats and attention. I can't wait to see what the future brings for us!"
+			image.style.opacity = "1"
+			image.style.backgroundImage = url
+		})
+	
+	</script>
+
+</body>
+</html>
